@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Juan Oicata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                Juan Oicata
+                <span>Ingeniero de Sistemas</span>
+            </div>
+            <button class="mobile-toggle" onclick="toggleNav()">☰</button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html" onclick="closeNav()">Inicio</a></li>
+                    <li><a href="sobre-mi.html" onclick="closeNav()">Sobre mí</a></li>
+                    <li><a href="servicios.html" onclick="closeNav()">Servicios</a></li>
+                    <li><a href="proyectos.html" onclick="closeNav()">Proyectos</a></li>
+                    <li><a href="habilidades.html" onclick="closeNav()">Habilidades</a></li>
+                    <li><a href="contacto.html" onclick="closeNav()">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mis <span>Servicios</span></h1>
+            <p class="eslogan">Soluciones tecnológicas completas para transformar tu negocio</p>
+        </div>
+    </section>
+
+    <!-- SERVICIOS DETALLADOS -->
+    <section class="servicios">
+        <h2>Servicios de Desarrollo</h2>
+        <div class="servicios-grid">
+            <div class="card servicio-card">
+                <div class="servicio-icon">⚙️</div>
+                <h3>Desarrollo Backend Escalable</h3>
+                <p>
+                    Creo APIs REST robustas y escalables usando <strong>Spring Boot, Java y arquitectura limpia</strong>. 
+                    Cada sistema está diseñado para crecer contigo, con patrones de diseño probados y código mantenible. 
+                    Incluye autenticación segura, manejo de errores, logging y documentación completa.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <div class="servicio-icon">🎨</div>
+                <h3>Frontend Responsivo Moderno</h3>
+                <p>
+                    Desarrollo de interfaces atractivas con <strong>HTML5, CSS3 avanzado y JavaScript ES6+</strong>. 
+                    Integración con Thymeleaf para templates dinámicos y Bootstrap para responsive design. 
+                    Cada pixel está optimizado para una experiencia de usuario excepcional en cualquier dispositivo.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <div class="servicio-icon">🗄️</div>
+                <h3>Diseño de Bases de Datos</h3>
+                <p>
+                    Arquitectura de datos eficiente con <strong>PostgreSQL y MySQL</strong>. Modelado relacional optimizado, 
+                    índices inteligentes y estrategias de escalabilidad. Implemento normalizacion correcta, queries optimizadas 
+                    y backup/recovery strategies para máxima confiabilidad.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <div class="servicio-icon">🔗</div>
+                <h3>Integración de APIs Externas</h3>
+                <p>
+                    Integración fluida de servicios externos como Stripe, Twilio, SendGrid y más. 
+                    Manejo robusto de errores, retry logic, webhooks seguros y documentación clara. 
+                    Tus sistemas se conectan sin fricciones y con máxima seguridad.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <div class="servicio-icon">🔧</div>
+                <h3>Mantenimiento y Soporte Técnico</h3>
+                <p>
+                    Soporte integral para sistemas existentes: corrección de bugs, optimización de performance, 
+                    refactorización de código heredado, actualización de dependencias y migraciones. 
+                    Disponibilidad continua y respuesta rápida ante incidentes críticos.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <div class="servicio-icon">📊</div>
+                <h3>Consultoría Técnica Estratégica</h3>
+                <p>
+                    Asesoría en arquitectura de sistemas, selección de tecnologías, mejores prácticas y optimización 
+                    de procesos de desarrollo. Ayudo a equipos a tomar decisiones técnicas informadas que impacten 
+                    positivamente en velocidad y calidad del desarrollo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS COMPLEMENTARIOS -->
+    <section class="propuesta">
+        <h2>Servicios Complementarios</h2>
+        <div class="valor-items">
+            <div class="valor-item">
+                <h3>🧪 Testing Automático</h3>
+                <p>Implementación de unit tests, integration tests y testing end-to-end con JUnit, Mockito y Selenium. Cobertura de código exhaustiva.</p>
+            </div>
+            <div class="valor-item">
+                <h3>🚀 Deployment & DevOps</h3>
+                <p>Setup de CI/CD con GitHub Actions/Jenkins, containerización Docker, y deployment automático. Infraestructura moderna y confiable.</p>
+            </div>
+            <div class="valor-item">
+                <h3>📖 Documentación Técnica</h3>
+                <p>Documentación clara de APIs, arquitectura y procesos. READMEs profesionales y diagramas explicativos. Tu equipo comprenderá el código.</p>
+            </div>
+            <div class="valor-item">
+                <h3>🔐 Seguridad & Auditoría</h3>
+                <p>Auditorías de seguridad, implementación de OAuth/JWT, OWASP compliance y mejores prácticas de protección de datos.</p>
+            </div>
+            <div class="valor-item">
+                <h3>⚡ Optimización de Performance</h3>
+                <p>Análisis y mejora de velocidad. Caching estratégico, optimización de queries, lazy loading y compresión de assets.</p>
+            </div>
+            <div class="valor-item">
+                <h3>👥 Code Review & Mentoring</h3>
+                <p>Revisión profesional de código con feedback constructivo. Mentoring de desarrolladores junior en patrones y mejores prácticas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESO DE TRABAJO -->
+    <section class="metodologia">
+        <h2>Mi Proceso de Trabajo</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="card metodo-item" style="margin-bottom: 1.5rem;">
+                <h3>1️⃣ Descubrimiento & Análisis</h3>
+                <p>Entiendo a fondo tus necesidades, desafíos y objetivos. Hacemos preguntas correctas antes de escribir código.</p>
+            </div>
+            <div class="card metodo-item" style="margin-bottom: 1.5rem;">
+                <h3>2️⃣ Diseño & Arquitectura</h3>
+                <p>Diseñamos soluciones escalables que encajen perfectamente. Documentamos la arquitectura y obtenemos aprobación antes de implementar.</p>
+            </div>
+            <div class="card metodo-item" style="margin-bottom: 1.5rem;">
+                <h3>3️⃣ Desarrollo Iterativo</h3>
+                <p>Trabajamos en sprints cortos. Entregas frecuentes, feedback continuo y ajustes basados en lo que aprendemos.</p>
+            </div>
+            <div class="card metodo-item" style="margin-bottom: 1.5rem;">
+                <h3>4️⃣ Testing & QA</h3>
+                <p>Testing exhaustivo en cada etapa. Unit tests, integration tests, y testing manual por usuarios reales.</p>
+            </div>
+            <div class="card metodo-item" style="margin-bottom: 1.5rem;">
+                <h3>5️⃣ Deployment & Launch</h3>
+                <p>Despliegue suave a producción con zero downtime. Monitoreo continuo durante primeras horas post-launch.</p>
+            </div>
+            <div class="card metodo-item">
+                <h3>6️⃣ Soporte Post-Launch</h3>
+                <p>Disponibilidad para bugs, mejoras y optimizaciones. Transición suave a tu equipo si lo deseas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- METODOLOGÍA -->
+    <section class="servicios">
+        <h2>Metodología Ágil</h2>
+        <div class="servicios-grid">
+            <div class="card servicio-card">
+                <h3>🔄 Scrum</h3>
+                <p>Sprints de 2 semanas, standups diarios, retrospectivas y planificación iterativa. Máxima visibilidad y control.</p>
+            </div>
+            <div class="card servicio-card">
+                <h3>📋 Kanban</h3>
+                <p>Flujo continuo de trabajo, límite de tareas en progreso, y entrega de features cuando están listos.</p>
+            </div>
+            <div class="card servicio-card">
+                <h3>📞 Comunicación Frecuente</h3>
+                <p>Reuniones semanales, reportes de progreso detallados y disponibilidad para preguntas urgentes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto">
+        <h2>¿Tienes un Proyecto en Mente?</h2>
+        <div class="contacto-content">
+            <p>Contáctame para discutir tus necesidades y cómo puedo ayudarte a alcanzar tus objetivos tecnológicos.</p>
+            <div class="contacto-info">
+                <div class="info-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:jeotoicata@gmail.com">jeotoicata@gmail.com</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>💼 LinkedIn</h3>
+                    <p><a href="https://linkedin.com/in/juanoicata" target="_blank">linkedin.com/in/juanoicata</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>📅 Calendario</h3>
+                    <p><a href="contacto.html">Agendar una llamada</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Juan Oicata | Ingeniero de Sistemas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

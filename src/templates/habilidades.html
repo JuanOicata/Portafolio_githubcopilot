@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades | Juan Oicata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                Juan Oicata
+                <span>Ingeniero de Sistemas</span>
+            </div>
+            <button class="mobile-toggle" onclick="toggleNav()">☰</button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html" onclick="closeNav()">Inicio</a></li>
+                    <li><a href="sobre-mi.html" onclick="closeNav()">Sobre mí</a></li>
+                    <li><a href="servicios.html" onclick="closeNav()">Servicios</a></li>
+                    <li><a href="proyectos.html" onclick="closeNav()">Proyectos</a></li>
+                    <li><a href="habilidades.html" onclick="closeNav()">Habilidades</a></li>
+                    <li><a href="contacto.html" onclick="closeNav()">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mis <span>Habilidades</span></h1>
+            <p class="eslogan">Tecnologías y competencias que domino para resolver desafíos complejos</p>
+        </div>
+    </section>
+
+    <!-- LENGUAJES DE PROGRAMACIÓN -->
+    <section class="tecnologias">
+        <h2>Lenguajes de Programación</h2>
+        <div class="tech-categories">
+            <div class="card tech-category">
+                <h3>Java ⭐⭐⭐⭐⭐</h3>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Mi lenguaje principal. 5+ años de experiencia. Domino OOP, generics, streams, lambdas y concurrencia.</p>
+                <ul class="tech-list">
+                    <li>JDK 11, 14, 17+ (última versión LTS)</li>
+                    <li>Programación orientada a objetos avanzada</li>
+                    <li>Streams, Lambdas y Functional Programming</li>
+                    <li>Concurrencia y multithreading</li>
+                    <li>Reflection y Anotaciones</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>JavaScript / TypeScript ⭐⭐⭐⭐</h3>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.8);">ES6+, manipulación de DOM, APIs asincrónicas, programación funcional moderna.</p>
+                <ul class="tech-list">
+                    <li>ES6+ (arrow functions, destructuring, spread)</li>
+                    <li>Async/Await y Promises</li>
+                    <li>Manipulación avanzada de DOM</li>
+                    <li>TypeScript (tipos, interfaces, genéricos)</li>
+                    <li>Testing con Jasmine y Karma</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>SQL ⭐⭐⭐⭐⭐</h3>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Queries complejas, optimización, índices y procedimientos almacenados.</p>
+                <ul class="tech-list">
+                    <li>Queries complejas con joins y subconsultas</li>
+                    <li>Optimización de índices y execution plans</li>
+                    <li>Procedimientos almacenados y triggers</li>
+                    <li>Window functions y CTEs</li>
+                    <li>Particionamiento y sharding</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>HTML5 & CSS3 ⭐⭐⭐⭐</h3>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Semantic HTML, CSS avanzado, Flexbox, Grid, animaciones y responsive design.</p>
+                <ul class="tech-list">
+                    <li>HTML5 semántico y accesibilidad</li>
+                    <li>CSS3 avanzado: Flexbox, Grid, Custom Properties</li>
+                    <li>Animations y Transitions suaves</li>
+                    <li>Media Queries y diseño responsive</li>
+                    <li>Preprocesadores (Sass/LESS)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FRAMEWORKS Y LIBRERÍAS -->
+    <section class="propuesta">
+        <h2>Frameworks & Librerías</h2>
+        <div class="tech-categories" style="margin-top: 3rem;">
+            <div class="card tech-category">
+                <h3>🚀 Spring Framework ⭐⭐⭐⭐⭐</h3>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Expert en Spring Boot, Data, Security, Cloud y ecosistema completo.</p>
+                <ul class="tech-list">
+                    <li>Spring Boot 2.x & 3.x (últimas versiones)</li>
+                    <li>Spring Data JPA & Hibernate ORM</li>
+                    <li>Spring Security con OAuth2 & JWT</li>
+                    <li>Spring MVC & REST controllers</li>
+                    <li>Spring Cloud (microservicios, config)</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>🗄️ Bases de Datos ⭐⭐⭐⭐⭐</h3>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.8);">PostgreSQL, MySQL, MongoDB y Redis. Diseño, optimización y escalabilidad.</p>
+                <ul class="tech-list">
+                    <li>PostgreSQL avanzado (JSONB, full-text search)</li>
+                    <li>MySQL & MariaDB administration</li>
+                    <li>MongoDB (documentos, agregaciones)</li>
+                    <li>Redis (caching, sessions, pub/sub)</li>
+                    <li>Elasticsearch (búsqueda full-text)</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>🎨 Frontend ⭐⭐⭐⭐</h3>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.8);">Bootstrap, Thymeleaf, AJAX y desarrollo de interfaces modernas.</p>
+                <ul class="tech-list">
+                    <li>Bootstrap 4 & 5 (responsive design)</li>
+                    <li>Thymeleaf templates (Spring integration)</li>
+                    <li>AJAX & fetch API</li>
+                    <li>jQuery (legacy projects)</li>
+                    <li>Chart.js & DataTables</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>🔧 Testing ⭐⭐⭐⭐</h3>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.8);">JUnit 5, Mockito, TestNG, Selenium. Test-Driven Development (TDD).</p>
+                <ul class="tech-list">
+                    <li>JUnit 5 & parametrized tests</li>
+                    <li>Mockito & mock objects</li>
+                    <li>TestNG & test suites</li>
+                    <li>Selenium WebDriver (E2E testing)</li>
+                    <li>Integration testing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERRAMIENTAS Y DEVOPS -->
+    <section class="metodologia">
+        <h2>Herramientas & DevOps</h2>
+        <div class="tech-categories" style="margin-top: 3rem;">
+            <div class="card tech-category">
+                <h3>🔧 Build & Package ⭐⭐⭐⭐⭐</h3>
+                <ul class="tech-list">
+                    <li>Maven (multi-module projects, plugins)</li>
+                    <li>Gradle (configuration, scripts)</li>
+                    <li>Npm & package management</li>
+                    <li>Dependency resolution & conflict</li>
+                    <li>Artifact repositories</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>🌳 Version Control ⭐⭐⭐⭐⭐</h3>
+                <ul class="tech-list">
+                    <li>Git (branching, merging, rebase)</li>
+                    <li>GitHub & GitLab (workflows, CI/CD)</li>
+                    <li>Pull requests & code review</li>
+                    <li>Semantic versioning</li>
+                    <li>Conventional commits</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>🚀 CI/CD & Deployment ⭐⭐⭐⭐</h3>
+                <ul class="tech-list">
+                    <li>GitHub Actions (workflows, automation)</li>
+                    <li>Jenkins (pipeline, agents, integration)</li>
+                    <li>Docker & containerización</li>
+                    <li>Docker Compose (multi-container)</li>
+                    <li>Zero-downtime deployments</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>📊 Herramientas & Utilitarios ⭐⭐⭐⭐</h3>
+                <ul class="tech-list">
+                    <li>Postman (API testing & documentation)</li>
+                    <li>SonarQube (code quality)</li>
+                    <li>Jira & Confluence (project management)</li>
+                    <li>Linux & bash scripting</li>
+                    <li>IntelliJ IDEA (desarrollo productivo)</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>🐳 Infrastructure ⭐⭐⭐⭐</h3>
+                <ul class="tech-list">
+                    <li>Docker (images, registries, networks)</li>
+                    <li>Kubernetes basics (deployment, services)</li>
+                    <li>Linux administration</li>
+                    <li>Apache & Nginx (web servers)</li>
+                    <li>Security & firewalls</li>
+                </ul>
+            </div>
+
+            <div class="card tech-category">
+                <h3>🔐 Security & Auth ⭐⭐⭐⭐</h3>
+                <ul class="tech-list">
+                    <li>OAuth2 & OpenID Connect</li>
+                    <li>JWT (JSON Web Tokens)</li>
+                    <li>HTTPS & SSL/TLS</li>
+                    <li>Encryption (symmetric/asymmetric)</li>
+                    <li>OWASP top 10 & best practices</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPETENCIAS BLANDAS -->
+    <section class="servicios">
+        <h2>Competencias Técnicas Avanzadas</h2>
+        <div class="servicios-grid">
+            <div class="card servicio-card">
+                <h3>🏗️ Arquitectura de Sistemas</h3>
+                <p>
+                    Diseño de arquitecturas escalables: microservicios, monolitos modularizados, 
+                    patrones de diseño (Singleton, Factory, Strategy, Observer). Clean Architecture y SOLID principles.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <h3>🔍 Code Quality & Best Practices</h3>
+                <p>
+                    Clean Code, SOLID principles, design patterns, refactoring, 
+                    code review, documentation. Testing automático y TDD.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <h3>📈 Performance Optimization</h3>
+                <p>
+                    Profiling y benchmarking, caching strategies (Redis), 
+                    query optimization, lazy loading, algoritmos eficientes.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <h3>🔐 Seguridad de Aplicaciones</h3>
+                <p>
+                    OWASP Top 10, encryption, authentication, authorization, 
+                    secure coding, penetration testing awareness.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <h3>🤝 Metodologías Ágiles</h3>
+                <p>
+                    Scrum, Kanban, Agile ceremonies, sprint planning, 
+                    retrospectives, continuous improvement.
+                </p>
+            </div>
+
+            <div class="card servicio-card">
+                <h3>💬 Comunicación Técnica</h3>
+                <p>
+                    Documentación clara, diagramas arquitectónicos, 
+                    presentaciones técnicas, mentoring de desarrolladores.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICACIONES Y APRENDIZAJE -->
+    <section class="perfil">
+        <h2>Certificaciones & Aprendizaje Continuo</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="perfil-stats">
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Certificaciones Profesionales</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Horas de Capacitación Anual</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Cursos Online Completados</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">Permanente</div>
+                    <div class="stat-label">Aprendizaje en Desarrollo</div>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 2rem; color: rgba(255,255,255,0.85); font-size: 1.05rem;">
+                📚 Me mantengo constantemente actualizado en tecnologías emergentes: Spring Cloud, 
+                Kubernetes, GraphQL, NoSQL avanzado y arquitecturas distribuidas. 
+                Participo en comunidades de desarrollo y conferencias técnicas anuales.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto">
+        <h2>¿Necesitas Estas Habilidades?</h2>
+        <div class="contacto-content">
+            <p>Puedo ayudarte con cualquier desafío técnico. Contáctame para discutir tu proyecto.</p>
+            <div class="contacto-info">
+                <div class="info-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:jeotoicata@gmail.com">jeotoicata@gmail.com</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>💼 LinkedIn</h3>
+                    <p><a href="https://linkedin.com/in/juanoicata" target="_blank">Ver perfil completo</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>💻 GitHub</h3>
+                    <p><a href="https://github.com/juanoicata" target="_blank">Ver portafolio código</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Juan Oicata | Ingeniero de Sistemas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

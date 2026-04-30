@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Juan Oicata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                Juan Oicata
+                <span>Ingeniero de Sistemas</span>
+            </div>
+            <button class="mobile-toggle" onclick="toggleNav()">☰</button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html" onclick="closeNav()">Inicio</a></li>
+                    <li><a href="sobre-mi.html" onclick="closeNav()">Sobre mí</a></li>
+                    <li><a href="servicios.html" onclick="closeNav()">Servicios</a></li>
+                    <li><a href="proyectos.html" onclick="closeNav()">Proyectos</a></li>
+                    <li><a href="habilidades.html" onclick="closeNav()">Habilidades</a></li>
+                    <li><a href="contacto.html" onclick="closeNav()">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>¡Conectemos!</h1>
+            <p class="eslogan">Hablemos sobre tu proyecto y cómo puedo ayudarte a hacerlo realidad</p>
+        </div>
+    </section>
+
+    <!-- INFORMACIÓN DE CONTACTO PRINCIPAL -->
+    <section class="contacto">
+        <h2>Formas de Contactarme</h2>
+        <div class="contacto-content">
+            <p style="font-size: 1.1rem; margin-bottom: 3rem;">
+                Estoy disponible para nuevos proyectos, consultoría, colaboraciones y conversaciones sobre tecnología. 
+                Respondo en menos de 24 horas. 🚀
+            </p>
+            <div class="contacto-info">
+                <div class="info-item">
+                    <h3>📧 Email Directo</h3>
+                    <p><a href="mailto:jeotoicata@gmail.com">jeotoicata@gmail.com</a></p>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">Mejor forma de contactarme | Respuesta en < 24h</p>
+                </div>
+                <div class="info-item">
+                    <h3>💼 LinkedIn</h3>
+                    <p><a href="https://linkedin.com/in/juanoicata" target="_blank">linkedin.com/in/juanoicata</a></p>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">Perfil profesional completo | Conecta conmigo</p>
+                </div>
+                <div class="info-item">
+                    <h3>💻 GitHub</h3>
+                    <p><a href="https://github.com/juanoicata" target="_blank">github.com/juanoicata</a></p>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">Portafolio de código | Proyectos open-source</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="servicios">
+        <h2>Envíame un Mensaje</h2>
+        <div style="max-width: 700px; margin: 0 auto;">
+            <form style="background: linear-gradient(135deg, var(--color-dark), rgba(124, 58, 237, 0.05)); 
+                         padding: 2.5rem; border-radius: 15px; border: 1px solid rgba(124, 58, 237, 0.2);">
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="nombre" style="display: block; margin-bottom: 0.5rem; color: var(--color-white); font-weight: 600;">
+                        Tu Nombre *
+                    </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" 
+                           style="width: 100%; padding: 12px 15px; border: 1px solid rgba(124, 58, 237, 0.3); 
+                                  border-radius: 8px; background: rgba(255,255,255,0.05); color: var(--color-white);
+                                  font-family: var(--font-primary); transition: all 0.3s ease;"
+                           onfocus="this.style.borderColor='var(--color-purple)'; this.style.boxShadow='0 0 10px rgba(124, 58, 237, 0.3)'"
+                           onblur="this.style.borderColor='rgba(124, 58, 237, 0.3)'; this.style.boxShadow='none'"
+                           required>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--color-white); font-weight: 600;">
+                        Tu Email *
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" 
+                           style="width: 100%; padding: 12px 15px; border: 1px solid rgba(124, 58, 237, 0.3); 
+                                  border-radius: 8px; background: rgba(255,255,255,0.05); color: var(--color-white);
+                                  font-family: var(--font-primary); transition: all 0.3s ease;"
+                           onfocus="this.style.borderColor='var(--color-purple)'; this.style.boxShadow='0 0 10px rgba(124, 58, 237, 0.3)'"
+                           onblur="this.style.borderColor='rgba(124, 58, 237, 0.3)'; this.style.boxShadow='none'"
+                           required>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="empresa" style="display: block; margin-bottom: 0.5rem; color: var(--color-white); font-weight: 600;">
+                        Tu Empresa / Proyecto
+                    </label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" 
+                           style="width: 100%; padding: 12px 15px; border: 1px solid rgba(124, 58, 237, 0.3); 
+                                  border-radius: 8px; background: rgba(255,255,255,0.05); color: var(--color-white);
+                                  font-family: var(--font-primary); transition: all 0.3s ease;"
+                           onfocus="this.style.borderColor='var(--color-purple)'; this.style.boxShadow='0 0 10px rgba(124, 58, 237, 0.3)'"
+                           onblur="this.style.borderColor='rgba(124, 58, 237, 0.3)'; this.style.boxShadow='none'">
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="asunto" style="display: block; margin-bottom: 0.5rem; color: var(--color-white); font-weight: 600;">
+                        Asunto *
+                    </label>
+                    <select id="asunto" name="asunto" 
+                           style="width: 100%; padding: 12px 15px; border: 1px solid rgba(124, 58, 237, 0.3); 
+                                  border-radius: 8px; background: rgba(255,255,255,0.05); color: var(--color-white);
+                                  font-family: var(--font-primary); transition: all 0.3s ease; cursor: pointer;"
+                           required>
+                        <option value="" style="background: var(--color-dark);">- Selecciona un tema -</option>
+                        <option value="proyecto" style="background: var(--color-dark);">Tengo un proyecto para desarrollar</option>
+                        <option value="consultoría" style="background: var(--color-dark);">Necesito consultoría técnica</option>
+                        <option value="mantenimiento" style="background: var(--color-dark);">Mantenimiento/Soporte de sistema</option>
+                        <option value="colaboración" style="background: var(--color-dark);">Colaboración/Partnership</option>
+                        <option value="otro" style="background: var(--color-dark);">Otro tema</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="mensaje" style="display: block; margin-bottom: 0.5rem; color: var(--color-white); font-weight: 600;">
+                        Tu Mensaje *
+                    </label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuéntame sobre tu proyecto..." 
+                              style="width: 100%; padding: 12px 15px; border: 1px solid rgba(124, 58, 237, 0.3); 
+                                     border-radius: 8px; background: rgba(255,255,255,0.05); color: var(--color-white);
+                                     font-family: var(--font-primary); transition: all 0.3s ease; resize: vertical;"
+                              onfocus="this.style.borderColor='var(--color-purple)'; this.style.boxShadow='0 0 10px rgba(124, 58, 237, 0.3)'"
+                              onblur="this.style.borderColor='rgba(124, 58, 237, 0.3)'; this.style.boxShadow='none'"
+                              required></textarea>
+                </div>
+
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">
+                    Los campos marcados con * son obligatorios
+                </p>
+
+                <button type="button" onclick="sendEmail()" 
+                        style="width: 100%; padding: 15px; background: linear-gradient(135deg, var(--color-purple), var(--color-purple-light)); 
+                               color: var(--color-white); border: none; border-radius: 50px; font-weight: 600; font-size: 1rem; 
+                               cursor: pointer; transition: all 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='var(--shadow-hover)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                    📧 Enviar Mensaje
+                </button>
+            </form>
+
+            <p style="text-align: center; margin-top: 2rem; color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+                O envia directamente a <strong style="color: var(--color-purple-light);">jeotoicata@gmail.com</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- DISPONIBILIDAD Y RESPUESTA -->
+    <section class="propuesta">
+        <h2>Mi Disponibilidad</h2>
+        <div class="valor-items">
+            <div class="valor-item">
+                <h3>⏰ Horario de Respuesta</h3>
+                <p>Respondo mensajes en menos de 24 horas, típicamente en el mismo día. Zona horaria: América</p>
+            </div>
+            <div class="valor-item">
+                <h3>🗓️ Disponibilidad Actual</h3>
+                <p>Abierto a nuevos proyectos y colaboraciones. Puedo comenzar en 2-3 semanas con dedicación inmediata.</p>
+            </div>
+            <div class="valor-item">
+                <h3>💬 Preferencia de Comunicación</h3>
+                <p>Email para consultas formales, WhatsApp para urgencias. Flexible con herramientas de chat del cliente.</p>
+            </div>
+            <div class="valor-item">
+                <h3>🤝 Reuniones</h3>
+                <p>Disponible para videollamadas de descubrimiento sin costo. Agenda tu llamada cuando quieras.</p>
+            </div>
+            <div class="valor-item">
+                <h3>📊 Propuestas</h3>
+                <p>Envío propuesta detallada dentro de 48 horas tras la consulta. Presupuesto personalizado sin compromisos.</p>
+            </div>
+            <div class="valor-item">
+                <h3>✅ Próximos Pasos</h3>
+                <p>Después de contacto inicial, establecemos llamada de descubrimiento para entender tus necesidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS O LINKS ÚTILES -->
+    <section class="metodologia">
+        <h2>Antes de Contactarme</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="card metodo-item">
+                <h3>📋 Ten Listos Estos Detalles</h3>
+                <ul style="list-style: none; padding-left: 0; color: rgba(255,255,255,0.85);">
+                    <li style="margin-bottom: 0.8rem;">✓ Descripción general del proyecto</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Alcance y objetivos principales</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Timeline esperado</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Presupuesto aproximado (si tienes idea)</li>
+                    <li>✓ Stakeholders o equipo involucrado</li>
+                </ul>
+            </div>
+
+            <div class="card metodo-item" style="margin-top: 1.5rem;">
+                <h3>🎯 Cuáles Son Mis Mejores Casos de Uso</h3>
+                <ul style="list-style: none; padding-left: 0; color: rgba(255,255,255,0.85);">
+                    <li style="margin-bottom: 0.8rem;">✓ Aplicaciones web backend/full-stack con Spring Boot</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Diseño de bases de datos complejas</li>
+                    <li style="margin-bottom: 0.8rem;">✓ APIs REST escalables y seguras</li>
+                    <li style="margin-bottom: 0.8rem;">✓ Migración o refactorización de sistemas heredados</li>
+                    <li>✓ Consultoría técnica y arquitectura de sistemas</li>
+                </ul>
+            </div>
+
+            <div class="card metodo-item" style="margin-top: 1.5rem;">
+                <h3>🔗 Otros Enlaces Útiles</h3>
+                <p>
+                    <a href="sobre-mi.html" style="color: var(--color-purple-light); text-decoration: none; font-weight: 600;">
+                        → Conoce mi historia
+                    </a> | 
+                    <a href="proyectos.html" style="color: var(--color-purple-light); text-decoration: none; font-weight: 600;">
+                        Ver mis proyectos
+                    </a> | 
+                    <a href="habilidades.html" style="color: var(--color-purple-light); text-decoration: none; font-weight: 600;">
+                        Explora mis habilidades
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Juan Oicata | Ingeniero de Sistemas</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function sendEmail() {
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const empresa = document.getElementById('empresa').value;
+            const asunto = document.getElementById('asunto').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            if (!nombre || !email || !asunto || !mensaje) {
+                alert('❌ Por favor completa todos los campos obligatorios.');
+                return;
+            }
+
+            // Crear el mailto link
+            const subject = `Contacto desde portafolio: ${asunto}`;
+            const body = `Nombre: ${nombre}\nEmail: ${email}\nEmpresa: ${empresa}\n\nMensaje:\n${mensaje}`;
+            
+            const mailtoLink = `mailto:jeotoicata@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Abrir cliente de email
+            window.location.href = mailtoLink;
+            
+            // Mostrar confirmación
+            alert('✅ Se abrirá tu cliente de email. Si no se abre automáticamente, puedes enviar a: jeotoicata@gmail.com');
+        }
+
+        // Permitir envío con Enter en textarea
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && e.ctrlKey && e.target.id === 'mensaje') {
+                sendEmail();
+            }
+        });
+    </script>
+</body>
+</html>
